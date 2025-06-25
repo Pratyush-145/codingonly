@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pratyush Gautam Portfolio</title>
+ <!-- add icon link -->
+    <link rel="icon" href="Screenshot 2025-06-18 212611.png" type="image/x-icon" />
+ <link rel="stylesheet" href="Style.css">
+<style>
+	/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: bold;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00f2ff !important;
+}
+
+/* Banner */
+.home-top-banner {
+  background: url(download.png) center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-content {
+  text-align: center;
+  margin-top: 200px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.banner-content h2 {
+  font-size: 3em;
+  color: #00f2ff;
+  text-shadow: 0 0 10px #00f2ff;
+}
+
+.banner-content a ion-icon {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.banner-content a:hover ion-icon {
+  color: #5e4c5e;
+  transform: scale(1.2);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #00f2ff;
+  text-align: center;
+  text-shadow: 0 0 10px #00f2ff;
+}
+
+/* About Section */
+.about-text p, .about-text li {
+  font-size: 1.1em;
+  color: #eef0f3;
+}
+
+.about ul {
+  padding-left: 20px;
+}
+
+.profile-image img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #00f2ff;
+}
+
+/* Skills */
+.progressbar .circle {
+  background: #111;
+  border: 2px solid #00f2ff;
+  padding: 20px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 15px auto;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  box-shadow: 0 0 15px #00f2ff;
+}
+
+/* Contact Form */
+.contact form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00f2ff;
+}
+
+.input-field {
+  background: #222;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #00f2ff;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #ff00ff;
+}
+
+.btn {
+  background: #00f2ff;
+  border: none;
+  color: #111;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #ff00ff;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background: #111;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footer .widget-title {
+  color: #00f2ff;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #00f2ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ff00ff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-content {
+    margin-top: 120px;
+  }
+
+  .banner-content h2 {
+    font-size: 2em;
+  }
+
+  .progressbar .circle {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+  }
+}
+
+  * {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.home-top-banner {
+  background: url('your-image.jpg') center/cover no-repeat;
+}
+
+</style>
+
+
+
+	<link rel="stylesheet" href="https://cdn.portwol.com/templates/6378a97cce33970557c3cfcf/1671618355504/aboutme_banner_particles/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/fontcringe.css">
+	<link rel="stylesheet" href="https://cdn.portwol.com/templates/6378a97cce33970557c3cfcf/1671618355504/aboutme_banner_particles/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdn.portwol.com/templates/6378a97cce33970557c3cfcf/1671618355504/aboutme_banner_particles/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdn.portwol.com/templates/6378a97cce33970557c3cfcf/1671618355504/aboutme_banner_particles/css/lightbox.min.css">
+	<link rel="stylesheet" href="https://cdn.portwol.com/templates/6378a97cce33970557c3cfcf/1671618355504/aboutme_banner_particles/css/parallax.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.portwol.com/templates/6378a97cce33970557c3cfcf/1671618355504/aboutme_banner_particles/css/style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.portwol.com/templates/6378a97cce33970557c3cfcf/1671618355504/aboutme_banner_particles/css/responsive.css" type="text/css">
+</head>
+
+<body>  
+
+	<header id="header" class="header fixed-top headerbg-darkcolor nav-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<nav class="navbar navbar-expand-lg navbar-light mgsb4navbar">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="if (!window.__cfRLUnblockHandlers) return false; mgsChangeMenubar(this)" data-cf-modified-0658154a729551931ae7d14d-=""> <span
+								class="menubar1"></span> <span class="menubar2"></span> <span class="menubar3"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item"> <a class="nav-link" href="#home">Home</a>
+								</li>
+								<li class="nav-item"> <a class="nav-link" href="#about">About</a>
+								</li>
+								
+										
+												
+														<li class="nav-item"> <a class="nav-link"
+																href="#contact">Contact</a>
+														</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+    <div class="main">
+<section id="home" class="home">
+		<div class="home-top-banner banner-1" >
+			<div id="particles-js"></div>
+			<div class="display-table">
+				<div class="display-table-cell">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="banner-content banner-content-fullwidth">
+									<h3>Hi, I'm</h3>
+									<H2 style="color: aliceblue;">Pratyush Gautam</H2>
+									<a href="https://www.instagram.com/tech_coding145" target="_blank" aria-label="Instagram Profile">
+  <ion-icon name="logo-instagram" style="font-size: 32px; color: white; margin: 5px;"></ion-icon>
+</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    </div>
+	
+
+	<section id="about" class="about about-box-style">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="title-wrap">
+						<div class="section-title-box">
+							<h2 class="section-title">About <strong>Me</strong></h2>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="profile-image" style="border-radius: 60PX;"> <img src="pratyush.png" alt="profile photo">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="about-text">
+								<p>
+									<p style="color: #fff;">Hello! I am a Grade 8 student at Manaskriti School with a strong interest in web development and creative coding. Over the past year, I have worked on several exciting projects, including: <BR>
+                                        <LI>A school website</LI>
+                                         <LI> A music website</LI>  
+                                           <LI>A Paralympics awareness website</LI>     
+                                           <LI>A pollution awareness website</LI>  </p>
+                                        <p style="color: #fff;">These projects helped me develop practical skills in both design and development.<BR>
+                               <br> 💻 Skills & Languages<BR>
+                                I have learned and worked with the following programming languages:
+<ul>
+  <li><strong>HTML</strong> – for structuring web pages</li>
+  <li><strong>CSS</strong> – for designing beautiful layouts</li>
+  <li><strong>Python</strong> – for logic, scripting, and automation</li>
+  <li><strong>P5.js</strong> – for creative coding and visual art</li>
+</ul></p>
+							</div>
+						</div>
+					</div>
+				</div>
+		<h2 style="text-align: center;">Skills</h2>
+					<div class="progressbar-wrap">
+						<div class="row" style="display: flex; justify-content: center;">
+							
+								<h4 class="col-12 pd-8" style='text-transform: capitalize; color: #fff;'>
+									Programming Skills
+								</h4>
+								
+									<div class="col-sm-3">
+										<div class="progressbar" data-animate="false">
+											<div class="circle"
+												data-percent="100"
+												data-color="#04b962">
+												
+												<p>
+													Coder
+												</p>
+											</div>
+										</div>
+									</div>
+									
+									<div class="col-sm-3">
+										<div class="progressbar" data-animate="false">
+											<div class="circle"
+												data-percent="100"
+												data-color="#04b962">
+												<div></div>
+												<p>
+													Web Devleoper
+												</p>
+											</div>
+										</div>
+									</div>
+									
+										
+								<h4 class="col-12 pd-8" style='text-transform: capitalize; color: #fff'>
+									Basketball Skills
+								</h4>
+								
+									<div class="col-sm-3">
+										<div class="progressbar" data-animate="false">
+											<div class="circle"
+												data-percent="100"
+												data-color="#04b962">
+												<div></div>
+												<p>
+													Basketball Player
+												</p>
+											</div>
+										</div>
+									</div>
+									
+										
+								<h4 class="col-12 pd-8" style='text-transform: capitalize; color: #fff'>
+									Editing Skills
+								</h4>
+								
+									<div class="col-sm-3">
+										<div class="progressbar" data-animate="false">
+											<div class="circle"
+												data-percent="100"
+												data-color="#04b962">
+												<div></div>
+												<p>
+													Video Editing
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<div class="progressbar" data-animate="false">
+											<div class="circle"
+												data-percent="100"
+												data-color="#04b962">
+												<div></div>
+												<p>
+													Image Editing
+												</p>
+											</div>
+										</div>
+									</div>
+										
+									
+										
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
+			<section id="contact" class="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="title-wrap">
+								<div class="section-title-box">
+									<h2 class="section-title">Wanna <strong>Talk</strong></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="display: flex; justify-content: center;">
+						<div class="col-md-10">
+							<div class="title-box">
+								<h3 class="sub-title" style="color: #fff">Write <strong>Me</strong></h3>
+							</div>
+						<form action="/action_page.php">
+  <div class="input-container">
+    <input class="input-field" type="text" placeholder="Name" name="name" required>
+  </div>
+
+  <div class="input-container">
+    <input class="input-field" type="email" placeholder="Email" name="email" required>
+  </div>
+
+  <div class="input-container">
+    <input class="input-field" type="tel" placeholder="Phone No" name="phone">
+  </div>
+
+  <div class="input-container">
+    <textarea class="input-field" placeholder="Feedback" name="feedback" rows="4"></textarea>
+  </div>
+
+  <div class="form-group col-sm-12">
+    <button type="submit" class="btn btn-shutter-out-horizontal sendMail">Send</button>
+  </div> 
+</form>
+
+								<div class="form-group col-sm-12">
+									<button type="submit" id="submit" class="btn btn-shutter-out-horizontal sendMail"
+										>Send</button>
+								</div> 
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					
+			<footer id="footer" class="footer" style="color: aliceblue;">
+				<div class="container">
+					<div class="footer-top clearfix">
+						<div class="row" style="display: flex; justify-content: center;">
+							<div class="col-md-4">
+								<div class="columnbottom-margin recent-work-wrap">
+									<h4 class="widget-title">Recent <span>Work</span></h4>
+									<h5>Haryana & Telengana Website</h5>
+											<h5>Ece Furnace Website</h5>
+									<div class="latest-pfolio">
+										<div class="row" style="display: flex; justify-content: center;">
+											
+										</div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="columnbottom-margin contact-info-wrap">
+									<h4 class="widget-title">Contact <span>Details</span></h4>
+									<ul class="contact-info list-unstyled">
+										
+										<li><i class="cris cri-home"></i>India</li>
+										<li><i class="cris cri-phone"></i>  <a>+919718026313</a>
+										</li>
+										<li><i class="cris cri-gmail"></i>  <a>Pratyushgautam145@gmail.com</a>
+										</li>
+									</ul>
+									<a href="https://www.instagram.com/tech_coding145?igsh=MTNoYjRndmZuNm5ucQ%3D%3D">
+                                                <ion-icon name="logo-instagram"></ion-icon>
+                                        </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer> 
+			
+			<a href="#home" class="scrollup"><i class="cris cri-arrow-circle-up"></i></a>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
